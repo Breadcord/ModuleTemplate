@@ -1,0 +1,24 @@
+[project]
+name = "module_id"
+description = "Module description"
+version = "0.1.0"
+license.text = "GNU GPLv3"
+authors = [
+    { name = "Your name" }
+]
+dependencies = [
+    # "aiohttp"
+]
+
+[tool.breadcord]
+name = "Module Name"
+
+# Don't touch the below Hatch config unless you know what you are doing!
+# It's what lets you easily bundle your module and changing this could cause installation errors.
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = ["*"]
